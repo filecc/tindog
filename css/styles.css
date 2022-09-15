@@ -1,34 +1,42 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-#title{
-  background-color: #ff4c68;
-  color: #fff;
-}
+h1, h2, h3, h4, h5, h6{
+  /* questo è un selettore multiplo, applica lo stile qui sotto a
+  tutti gli H dell'index
 
-h1{
+  un altro tipo di selettore è
+
+  selector1 selector2 {
+  in questo caso selector1 è il genitore
+  selector2 è il figlio
+  }
+
+  */
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
-/* abbiamo messo colore in title perché così se aggiungessimo testo in futuro
-sotto h1 sarebbe bianco senza dovercene ricordare */
-}
-
-h3{
-  font-size: 1.5rem;
-  font-family: 'Montserrat-regular', sans-serif;
-  font-weight: bold;
 }
 
 p{
   color: #8f8f8f;
 }
 
-h2{
-  font-family: 'Montserrat-bold', sans-serif;
-  font-weight: bold;
+
+/* Headings */
+
+#title{
+  text-align: left;
+}
+
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -59,9 +67,6 @@ h2{
   font-weight: 100;
 }
 
-/* Title Section */
-
-
 
 /* Donwload Button */
 
@@ -89,8 +94,11 @@ h2{
 }
 
 .feature-box{
-  text-align: center;
   padding: 5%;
+}
+
+.feat-title{
+  font-size: 1.5rem;
 }
 
 .feat-icons{
@@ -107,7 +115,6 @@ h2{
 /* Testimonials */
 
 #testimonials{
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
@@ -118,6 +125,11 @@ h2{
   margin: 10px;
 }
 
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .carousel-item{
   padding: 7% 15%;
 }
@@ -126,8 +138,9 @@ h2{
 /* Press */
 
 #press{
+  background-color: #ff4c68;
+  color: #fff;
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -140,21 +153,57 @@ h2{
 
 #pricing{
   padding: 5%;
-  text-align: center;
 }
 
 .deck{
 margin: 5% 5% 10%;
 }
 
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+
+#cta {
+  padding: 3% 5% 0;
+}
+
+
+/* FOOTER */
+
+#footer{
+  background-color: #fff;
+  padding: 5% 0;
+}
+
+.footer-icons{
+  margin: 20px 10px;
+}
+
+/* Color or Not */
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+
+}
+/* MEDIA QUERY */
+
 @media (max-width: 1028px){
 #title-section{
   text-align: center;
 }
 
-h1{
-  font-size: 40px;
-  transition: ease-in-out .6s;
+.big-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
   .title-image{
@@ -164,33 +213,4 @@ h1{
     transition: ease-in-out .6s;
   }
 
-}
-/* CTA Section */
-
-
-#cta {
-  background-color: #ff4c68;
-  text-align: center;
-  color: #fff;
-  padding: 3% 0 0;
-}
-
-.cta-title{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
-  padding: 0 20% 0;
-}
-
-/* FOOTER */
-
-#footer{
-  background-color: #fff;
-  text-align: center;
-  padding: 5% 0;
-}
-
-.footer-icons{
-  margin: 20px 10px;
 }
