@@ -1,2 +1,1 @@
-# tindog
-a project from Udemy
+TinDog Starting Files
